@@ -10,8 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <!-- Option 1: Include in HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="./css/index.css">
     <title>طلا یار</title>
@@ -143,8 +142,16 @@
                     </li>
                 </ul>
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-danger">سبد خرید <i class="bi bi-cart4"></i></button>
-                    <button type="button" class="btn btn-primary">ورود <i class="bi bi-person-circle"></i></button>
+                    <button type="button" class="btn btn-danger">سبد خرید <span class="cart-counter position-absolute top-0 end-80 translate-middle badge rounded-pill bg-danger">
+                        0
+                        <span class="visually-hidden">unread messages</span>
+                      </span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg></button>
+                    <button type="button" class="btn btn-primary">ورود <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg></button>
                 </div>
             </div>
         </div>
@@ -156,88 +163,7 @@
     <section class="m-4 d-flex flex-wrap justify-content-center">
 
         <div class="card mx-1 mb-2" style="width: 18rem; height: max-content;">
-            <img src="./images/product.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">النگو دستبندی ماه <span class="badge text-bg-danger">8%</span></h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">وزن: 3.55</li>
-                <li class="list-group-item">قیمت: <span>15000000</span> <span style="text-decoration: line-through;">15100000</span></li>
-                <li class="list-group-item">
-                    <span>سایز:</span>
-                    <div class="btn-group mx-2" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck1">2</label>
-                    </div>
-                </li>
-            </ul>
-            <div class="card-body text-center">
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-danger">افزودن به سبد</button>
-                    <button type="button" class="btn btn-primary">اطلاعات بیشتر</button>
-                  </div>
-            </div>
-        </div>
-
-        <div class="card mx-1 mb-2" style="width: 18rem; height: max-content;">
-            <img src="./images/product2.webp" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">گوشواره طلا سه رج زرد <span class="badge text-bg-danger">5%</span></h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">وزن: 4.30</li>
-                <li class="list-group-item">قیمت: <span>18،500،000</span> <span style="text-decoration: line-through;">18،600،000</span></li>
-                <li class="list-group-item">
-                    <span>قطر:</span>
-                    <div class="btn-group mx-2" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck1">30m</label>
-                    
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck2">20m</label>
-                    </div>
-                </li>
-            </ul>
-            <div class="card-body text-center">
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-danger">افزودن به سبد</button>
-                    <button type="button" class="btn btn-primary">اطلاعات بیشتر</button>
-                  </div>
-            </div>
-        </div>
-
-        <div class="card mx-1 mb-2" style="width: 18rem; height: max-content;">
-            <img src="./images/product3.webp" class="card-img-top" alt="...">
-            <div class="card-body ">
-                <h5 class="card-title">انگشتر پاپیون طلا دورنگ <span class="badge text-bg-danger">3%</span></h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">وزن: 10.93</li>
-                <li class="list-group-item">قیمت: <span>48،000،000</span> <span style="text-decoration: line-through;">48،165،000</span></li>
-                <li class="list-group-item">
-                    <span>سایز:</span>  
-                    <div class="btn-group mx-2" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck1">50</label>
-                    
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck2">30</label>
-                    
-                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck3">100</label>
-                    </div>
-                </li>
-            </ul>
-            <div class="card-body text-center">
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-danger">افزودن به سبد</button>
-                    <button type="button" class="btn btn-primary">اطلاعات بیشتر</button>
-                  </div>
-            </div>
-        </div>
-
-        <div class="card mx-1" style="width: 18rem; height: max-content;">
-            <img src="./images/product.webp" class="card-img-top" alt="...">
+            <a href="details.html"><img src="./images/product.webp" class="card-img-top" alt="..."></a>
             <div class="card-body">
                 <h5 class="card-title">النگو دستبندی ماه <span class="badge text-bg-danger">8%</span></h5>
             </div>
@@ -255,13 +181,94 @@
             <div class="card-body text-center">
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn btn-danger">افزودن به سبد</button>
-                    <button type="button" class="btn btn-primary">اطلاعات بیشتر</button>
+                    <a href="details.html" type="button" class="btn btn-primary">اطلاعات بیشتر</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="card mx-1 mb-2" style="width: 18rem; height: max-content;">
+            <a href="details.html"><img src="./images/product2.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title">گوشواره طلا سه رج زرد <span class="badge text-bg-danger">5%</span></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">وزن: 4.30</li>
+                <li class="list-group-item">قیمت: <span>18،500،000</span> <span style="text-decoration: line-through;">18،600،000</span></li>
+                <li class="list-group-item">
+                    <span>قطر:</span>
+                    <div class="btn-group mx-2" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck2">30m</label>
+                    
+                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck3">20m</label>
+                    </div>
+                </li>
+            </ul>
+            <div class="card-body text-center">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">افزودن به سبد</button>
+                    <a href="details.html" type="button" class="btn btn-primary">اطلاعات بیشتر</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="card mx-1 mb-2" style="width: 18rem; height: max-content;">
+            <a href="details.html"><img src="./images/product3.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body ">
+                <h5 class="card-title">انگشتر پاپیون طلا دورنگ <span class="badge text-bg-danger">3%</span></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">وزن: 10.93</li>
+                <li class="list-group-item">قیمت: <span>48،000،000</span> <span style="text-decoration: line-through;">48،165،000</span></li>
+                <li class="list-group-item">
+                    <span>سایز:</span>  
+                    <div class="btn-group mx-2" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck4">50</label>
+                    
+                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck4">30</label>
+                    
+                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck4">100</label>
+                    </div>
+                </li>
+            </ul>
+            <div class="card-body text-center">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">افزودن به سبد</button>
+                    <a href="details.html" type="button" class="btn btn-primary">اطلاعات بیشتر</a>
                   </div>
             </div>
         </div>
 
         <div class="card mx-1" style="width: 18rem; height: max-content;">
-            <img src="./images/product2.webp" class="card-img-top" alt="...">
+            <a href="details.html"><img src="./images/product.webp" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title">النگو دستبندی ماه <span class="badge text-bg-danger">8%</span></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">وزن: 3.55</li>
+                <li class="list-group-item">قیمت: <span>15،000،000</span> <span style="text-decoration: line-through;">15،100،000</span></li>
+                <li class="list-group-item">
+                    <span>سایز:</span>
+                    <div class="btn-group mx-2" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck1">2</label>
+                    </div>
+                </li>
+            </ul>
+            <div class="card-body text-center">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-danger">افزودن به سبد</button>
+                    <a href="details.html" type="button" class="btn btn-primary">اطلاعات بیشتر</a>
+                  </div>
+            </div>
+        </div>
+
+        <div class="card mx-1" style="width: 18rem; height: max-content;">
+            <a href="details.html"><img src="./images/product2.webp" class="card-img-top" alt="..."></a>
             <div class="card-body">
                 <h5 class="card-title">گوشواره طلا سه رج زرد <span class="badge text-bg-danger">5%</span></h5>
             </div>
@@ -282,13 +289,13 @@
             <div class="card-body text-center">
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn btn-danger">افزودن به سبد</button>
-                    <button type="button" class="btn btn-primary">اطلاعات بیشتر</button>
+                    <a href="details.html" type="button" class="btn btn-primary">اطلاعات بیشتر</a>
                   </div>
             </div>
         </div>
         
         <div class="card mx-1" style="width: 18rem; height: max-content;">
-            <img src="./images/product3.webp" class="card-img-top" alt="...">
+            <a href="details.html"><img src="./images/product3.webp" class="card-img-top" alt="..."></a>
             <div class="card-body ">
                 <h5 class="card-title">انگشتر پاپیون طلا دورنگ <span class="badge text-bg-danger">%3</span></h5>
             </div>
@@ -312,7 +319,7 @@
             <div class="card-body text-center">
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn btn-danger">افزودن به سبد</button>
-                    <button type="button" class="btn btn-primary">اطلاعات بیشتر</button>
+                    <a href="details.html" type="button" class="btn btn-primary">اطلاعات بیشتر</a>
                   </div>
             </div>
         </div>
@@ -326,7 +333,7 @@
     <section class="m-4 d-flex flex-wrap justify-content-center">
 
         <div class="card mx-1 mb-2" style="width: 18rem; height: max-content;">
-            <img src="./images/product.webp" class="card-img-top" alt="...">
+            <a href="details.html"><img src="./images/product.webp" class="card-img-top" alt="..."></a>
             <div class="card-body">
                 <h5 class="card-title">النگو دستبندی ماه</h5>
             </div>
@@ -344,13 +351,13 @@
             <div class="card-body text-center">
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn btn-danger">افزودن به سبد</button>
-                    <button type="button" class="btn btn-primary">اطلاعات بیشتر</button>
+                    <a href="details.html" type="button" class="btn btn-primary">اطلاعات بیشتر</a>
                   </div>
             </div>
         </div>
 
         <div class="card mx-1 mb-2" style="width: 18rem; height: max-content;">
-            <img src="./images/product2.webp" class="card-img-top" alt="...">
+            <a href="details.html"><img src="./images/product2.webp" class="card-img-top" alt="..."></a>
             <div class="card-body">
                 <h5 class="card-title">گوشواره طلا سه رج زرد</h5>
             </div>
@@ -371,13 +378,13 @@
             <div class="card-body text-center">
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn btn-danger">افزودن به سبد</button>
-                    <button type="button" class="btn btn-primary">اطلاعات بیشتر</button>
+                    <a href="details.html" type="button" class="btn btn-primary">اطلاعات بیشتر</a>
                   </div>
             </div>
         </div>
 
         <div class="card mx-1 mb-2" style="width: 18rem; height: max-content;">
-            <img src="./images/product3.webp" class="card-img-top" alt="...">
+            <a href="details.html"><img src="./images/product3.webp" class="card-img-top" alt="..."></a>
             <div class="card-body ">
                 <h5 class="card-title">انگشتر پاپیون طلا دورنگ </h5>
             </div>
@@ -401,7 +408,7 @@
             <div class="card-body text-center">
                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                     <button type="button" class="btn btn-danger">افزودن به سبد</button>
-                    <button type="button" class="btn btn-primary">اطلاعات بیشتر</button>
+                    <a href="details.html" type="button" class="btn btn-primary">اطلاعات بیشتر</a>
                   </div>
             </div>
         </div>
@@ -466,7 +473,9 @@
       </div>
     <footer class="footer  bg-dark text-white text-center"> 
         <div class="container"> 
-            <span>ساخته شده با <i class="bi bi-heart-fill"></i> توسط بچه های گروه 8(رحیمی،محمدی،پرتویان)</span> 
+            <span>ساخته شده با <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg> توسط بچه های گروه 9(رحیمی،محمدی،پرتویان)</span> 
         </div> 
     </footer>
 </body>
