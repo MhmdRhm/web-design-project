@@ -1,0 +1,24 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+@font-face {
+    font-family: heading;
+    src: url('../fonts/AGhasem.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: mainfont;
+    src: url('../fonts/BHOMA.TTF') format('truetype');
+}
+
+h3 {
+    font-family: heading;
+}
+
+* {
+    font-family: mainfont;
+    font-size: 19px;
+}
+
+.pointer {
+    cursor: pointer;
+}
